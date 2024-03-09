@@ -1,0 +1,19 @@
+{
+  "name": "upload-with-formidable",
+  "version": "1.0.0",
+  "description": "Using an NPM package formidable to upload files in NodeJS server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "formidable": "^3.5.1"
+  }
+}
