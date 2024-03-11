@@ -21,13 +21,15 @@ const server = http.createServer(async (req, res) => {
       },
     });
     await form.parse(req);
-    res.writeHead(200, {"Content-Type": "application/json"})
-    res.write(JSON.stringify({"message": "File uploaded"}))
-    res.end()
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.write(JSON.stringify({ message: "File uploaded" }));
+    res.end();
   } else {
-    console.log("Error occurred")
+    console.log("Error occurred");
     res.writeHead(400, { "Content-Type": "application/json" });
-    res.write(JSON.stringify({ message: "Error occurred uploading file. Try again" }));
+    res.write(
+      JSON.stringify({ message: "Error occurred uploading file. Try again" })
+    );
     res.end();
   }
 });
@@ -61,5 +63,5 @@ app.listen(port, () => {
 });
 
 server.listen(5000, () => {
-    console.log(`Server started running at port:5000`)
-})
+  console.log(`Server started running at port:5000`);
+});
